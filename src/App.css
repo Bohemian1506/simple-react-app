@@ -1,0 +1,90 @@
+.app {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+
+.light {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+.dark {
+  background-color: #282c34;
+  color: #f8f9fa;
+}
+
+.app-header {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 1.5vmin);
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.counter-container {
+  margin: 20px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 300px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+button {
+  background-color: #4361ee;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #3a56d4;
+}
+
+.theme-toggle {
+  margin-top: 10px;
+  background-color: transparent;
+  border: 1px solid currentColor;
+}
+
+.dark .theme-toggle {
+  color: #f8f9fa;
+}
+
+.light .theme-toggle {
+  color: #212529;
+}
+
+.theme-toggle:hover {
+  background-color: rgba(67, 97, 238, 0.1);
+}
+
+footer {
+  padding: 20px;
+  font-size: 14px;
+  opacity: 0.8;
+}
